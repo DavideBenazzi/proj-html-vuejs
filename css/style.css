@@ -7,18 +7,28 @@
 }
 
 /* UTILITY */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .mt30 {
     margin-top: 30px;
 }
 
 .btn {
-    padding: 8px 25px;
+    padding: 10px 25px;
     border: none;
     border-radius: 20px;
     outline: none;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
 }
 
 .orange {
@@ -36,11 +46,6 @@
     background-size: cover;
     color: #fff;
     padding: 25px;
-}
-
-.hero .container {
-    max-width: 1170px;
-    margin: 0 auto;
 }
 
 /* HEADER */
@@ -64,6 +69,26 @@
     font-size: 14px;
 }
 
+.hero .container header .navbar .navlinks li a:focus,
+.hero .container header .navbar .navlinks li a:active {
+    color: #FFA837;
+}
+
+.hero .container header .navbar .navlinks li a:hover {
+    color: #556EED;
+}
+
+.hero .container header .navbar .navlinks li:nth-child(5) a:after {
+    content: 'APPLY';
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFA834;
+    border: 1px solid #FFA834;
+    border-radius: 4px;
+    padding: 3px 5px;
+    margin-left: 5px;
+} 
+
 /* SEM */
 .hero .container .sem {
     max-width: 50%;
@@ -86,4 +111,14 @@
 
 .hero .container .sem .semBtn .orange {
     margin-right: 20px;
+}
+
+/* MEET */
+.meet {
+    height: 1350px;
+    background-color: #F8F8F8;
+}
+
+.meet .container .meetAgency {
+    text-align: center;
 }
