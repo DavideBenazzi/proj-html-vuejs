@@ -11,6 +11,24 @@
     margin-top: 30px;
 }
 
+.btn {
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.orange {
+    background-color: #FFA837;
+}
+
+.blue {
+    background-color: #556EED;
+}
+
 /* HERO */
 .hero {
     background-image: url('../img/1-hero-image.png');
@@ -36,6 +54,14 @@
 .hero .container header .navbar .navlinks {
     display: flex;
     list-style: none;
+    align-items: center;
+}
+
+.hero .container header .navbar .navlinks li a {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* SEM */
@@ -51,10 +77,13 @@
 }
 
 .hero .container .sem p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .hero .container .sem .semBtn {
     display: flex;
-    justify-content: center;
+}
+
+.hero .container .sem .semBtn .orange {
+    margin-right: 20px;
 }
