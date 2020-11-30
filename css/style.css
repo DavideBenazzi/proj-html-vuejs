@@ -174,3 +174,59 @@ h3 {
     font-size: 14px;
     line-height: 32px;
 }
+
+/* SERVICES */
+.services {
+    height: 950px;
+    background-color: #051745;
+    background-image: url('../img/pattern_background.png');
+    color: #fff;
+
+}
+
+.services .topServices {
+    padding-top: 120px;
+    text-align: center;
+}
+
+/* SERVICES FOUR BOXES */
+.services .servicesBoxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.services .servicesBoxes .serviceBox {
+    height: 400px;
+    flex-basis: 255px;
+    background-color: #071B50;
+}
+
+.services .servicesBoxes .serviceBox i {
+    color: #FFA837;
+    font-size: 32px;
+    margin: 50px 0;
+}
+
+.services .servicesBoxes .serviceBox p {
+    line-height: 28px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.services .servicesBoxes .serviceBox a {
+    text-decoration: none;
+    color: #FFA837;
+}
+
+.services .servicesBoxes .serviceBox a i {
+    margin: 0;
+    font-size: 12px;
+}
+
+.services .servicesBoxes .serviceBox a:hover,
+.services .servicesBoxes .serviceBox a:hover i {
+    color: #556EED;
+}
