@@ -3,10 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
+    font-size: 36px;
+}
+
+h3 {
     font-size: 28px;
 }
 
@@ -48,6 +52,9 @@ h3 {
     background-color: #556EED;
 }
 
+.textCenter {
+    text-align: center;
+} 
 /* HERO */
 .hero {
     background-image: url('../img/1-hero-image.png');
@@ -125,7 +132,7 @@ h3 {
 /* MEET */
 .meet {
     height: 1350px;
-    background-color: #F8F8F8;
+    background-color: #F7F8FA;
 }
 
 .meet .container {
@@ -145,7 +152,7 @@ h3 {
 }
 
 .meet .container .meetAgency p {
-    line-height: 28px;
+    line-height: 32px;
 }
 
 /* OBJECTIVES */
@@ -181,12 +188,15 @@ h3 {
     background-color: #051745;
     background-image: url('../img/pattern_background.png');
     color: #fff;
-
 }
 
 .services .topServices {
     padding-top: 120px;
     text-align: center;
+}
+
+.services .topServices p {
+    line-height: 32px;
 }
 
 /* SERVICES FOUR BOXES */
@@ -229,4 +239,36 @@ h3 {
 .services .servicesBoxes .serviceBox a:hover,
 .services .servicesBoxes .serviceBox a:hover i {
     color: #556EED;
+}
+
+/* OURWORK */
+.ourWork {
+    color: #F7F8FA;
+    height: 1200px;
+}
+
+.ourWork h2 {
+    color: #000;
+    padding-top: 120px;
+}
+
+.ourWork p {
+    color: #5E5F64;
+    line-height: 32px;
+    margin-bottom: 75px;
+}
+
+.ourWork .caseStudy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ourWork .caseStudy img {
+    width: 380px;
+}
+
+.ourWork button {
+    margin: 75px 0 120px;
 }
