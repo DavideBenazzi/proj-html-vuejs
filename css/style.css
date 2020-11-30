@@ -6,6 +6,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+    font-size: 28px;
+}
+
+h2,
+h3 {
+    font-weight: 800;
+}
+
 /* UTILITY */
 .container {
     max-width: 1170px;
@@ -119,6 +128,49 @@
     background-color: #F8F8F8;
 }
 
+.meet .container {
+    background-image: url('../img/agency-seo-desk-front-1200x570.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* MEETAGENCY */
 .meet .container .meetAgency {
     text-align: center;
+}
+
+.meet .container .meetAgency h2 {
+    padding-top: 120px;
+}
+
+.meet .container .meetAgency p {
+    line-height: 28px;
+}
+
+/* OBJECTIVES */
+.meet .container .objectives {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.meet .container .objectives .objBox {
+    flex-basis: 350px;
+    height: 350px;
+    background-color: #fff;
+    padding: 50px 5px;
+}
+
+.meet .container .objectives .objBox i {
+    color: #FFA837;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.meet .container .objectives .objBox p {
+    font-size: 14px;
+    line-height: 32px;
 }
