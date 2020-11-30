@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <!-- CSS -->
@@ -13,6 +16,43 @@
 <body>
     <!-- VUE -->
     <div id='app'>
+        <!-- HERO -->
+        <section class="hero">
+            <!-- CONTAINER -->
+            <div class="container">
+                <!-- HEADER -->
+                <header>
+                    <a href="#">
+                        <img src="./img/logo_seo_1x.png" alt="logo seo">
+                    </a>
+                    <nav class="navbar">
+                        <ul class="navlinks">
+                            <li v-for='link in links'>
+                                <a href="#">{{ link }}</a>
+                            </li>
+                            <button class="btn orange">
+                                GET IN TOUCH NOW
+                            </button>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- SEM -->
+                <div class="sem">
+                    <h1>
+                        SEM Campaigns Made<br>Simple With Avada
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Phasellum eu ornare erat. Curabitur pulvinar elit.
+                    </p>
+                    <button class="btn orange">
+                        BUY AVADA NOW
+                    </button>
+                    <button class="btn blue">
+                        CONTACT US
+                    </button>
+                </div>
+            </div>
+        </section>
 
     </div>
     <!-- JAVASCRIPT -->

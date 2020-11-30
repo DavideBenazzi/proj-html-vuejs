@@ -3,4 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HERO */
+.hero {
+    background-image: url('../img/1-hero-image.png');
+    height: 814px;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero .container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.hero .container header {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.hero .container header .navbar .navlinks {
+    display: flex;
+    list-style: none;
 }
