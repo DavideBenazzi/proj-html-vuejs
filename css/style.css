@@ -392,3 +392,20 @@ h3 {
 .ourNewsBoxes .ourNewsBox p:nth-child(3) {
     font-size: 12px;
 }
+
+/* WHAT CLIENTS SAY */
+.whatClients {
+    height: 880px;
+    background-color: #fff;
+    padding-top: 120px;
+}
+
+.whatClients .selectImg img {
+    border-radius: 50%;
+}
+
+.whatClients .clients {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #868686 ;
+}
