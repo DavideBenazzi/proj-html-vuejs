@@ -22,7 +22,7 @@
             <div class="container">
                 <!-- HEADER -->
                 <header>
-                    <a href="#">
+                    <a href="https://avada.theme-fusion.com/seo/" target="blank">
                         <img src="./img/logo_seo_w_1x.png" alt="logo seo" class="logo">
                     </a>
                     <!-- NAVBAR -->
@@ -31,11 +31,6 @@
                             <li v-for='link in links'>
                                 <a href="#">{{ link }}</a>
                             </li>
-                            <a href="#">
-                                <button class="btn btnOrange">
-                                    GET IN TOUCH NOW
-                                </button>
-                            </a>
                         </ul>
                     </nav>
                 </header>
@@ -411,38 +406,59 @@
         <!-- FOOTER -->
         <footer>
             <div class="container textCenter">
-                <img src="./img/logo_seo_1x.png" alt="logo avada seo">
+                <img src="./img/logo_seo_1x.png" alt="logo avada seo" class="mt50">
+                <!-- FOOTER LINKS -->
+                <ul class="footerLinks">
+                    <li v-for='link in links'>
+                        <a href="#">{{ link }}</a>
+                    </li>
+                </ul>
+                <!-- FOOTER COPYRIGHT -->
+                <ul class="copyright">
+                    <li>
+                        <i class="far fa-copyright"></i>
+                        Copyright 2012-2020
+                    </li>
+                    <li>
+                        Avada Theme by <b>Themefusion</b>
+                    </li>
+                    <li>
+                        All Rights Reserved
+                    </li>
+                    <li>
+                        Powered by <b>WordPress</b>
+                    </li>
+                </ul>
+                <!-- FOOTER SOCIAL -->
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="footerLinks">
-                <li v-for='link in links'>
-                    <a href="#">{{ link }}</a>
-                </li>
-            </ul>
-            <ul class="copyright">
-                <li>
-                    <i class="far fa-copyright"></i>
-                    Copyright 2012-2020
-                </li>
-                <li>
-                    Avada Theme by <b>Themefusion</b>
-                </li>
-                <li>
-                    All Rights Reserved
-                </li>
-                <li>
-                    Powered by <b>WordPress</b>
-                </li>
-            </ul>
-            <ul class="social">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-youtube"></i></li>
-            </ul>
-
+            <!-- TO THE TOP -->
+            <a href="#" class="toTheTop">
+                <i class="fas fa-angle-up"></i>
+            </a>
         </footer>
-
-    </div>
+    </div> 
     <!-- JAVASCRIPT -->
     <script src="./js/main.js" charset="utf-8"></script>
 </body>

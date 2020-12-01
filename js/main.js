@@ -9,6 +9,7 @@ const app = new Vue ({
             'Where We Work',
             'Careers',
             'News',
+            'Get In Touch Now'
         ],
     },
 });
