@@ -407,5 +407,9 @@ h3 {
 .whatClients .clients {
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid #868686 ;
+    border-top: 2px solid #E9E8EE ;
+}
+
+.whatClients .clients .logoClient img {
+    width: 120px;
 }
