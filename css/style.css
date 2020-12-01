@@ -243,7 +243,7 @@ h3 {
 
 /* OURWORK */
 .ourWork {
-    color: #F7F8FA;
+    background-color: #F7F8FA;
     height: 1200px;
 }
 
@@ -271,4 +271,35 @@ h3 {
 
 .ourWork button {
     margin: 75px 0 120px;
+}
+
+/* OURPLANS */
+.ourPlans {
+    background-image:url('../img/background1.jpg');
+    height: 900px;
+}
+
+.ourPlans h2 {
+    color: #fff;
+    padding-top: 120px;
+}
+
+.ourPlans p {
+    color: #fff;
+    line-height: 32px;
+    margin-bottom: 75px;
+}
+
+.ourPlans .plans {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ourPlans .plans .plansBox {
+    height: 470px;
+    flex-basis: 300px;
+    background-color: #fff;
 }
