@@ -37,6 +37,10 @@ h3 {
     margin-top: 50px;
 }
 
+.mt75 {
+    margin-top: 75px;
+}
+
 .btn {
     padding: 10px 25px;
     border: none;
@@ -312,6 +316,7 @@ h3 {
     justify-content: space-between;
 }
 
+/* OURPLANS BOXES */
 .ourPlans .plans .plansBox {
     height: 470px;
     flex-basis: 300px;
@@ -319,24 +324,71 @@ h3 {
     padding: 30px;
 }
 
+.ourPlans .plans .plansBox .price {
+    padding-right: 20px;
+}
+
+.ourPlans .plans .plansBox .price i {
+    transform: translateY(-100%);
+}
+
 .ourPlans .plans .plansBox .price span {
     position: relative;
-    font-size: 32px;
+    font-size: 50px;
     display: inline-block;
+    font-weight: 900;
+    color: #5F7AFD;
+}
+
+.ourPlans .plans .plansBox h4 {
+    color: #5d5e5f;
 }
 
 .ourPlans .plans .plansBox .price span::before {
     content: '99';
     position: absolute;
-    top: 0;
-    right: -100%; 
-    font-size: 12px;
+    top: 15%;
+    right: -30%; 
+    font-size: 16px;
 } 
 
 .ourPlans .plans .plansBox .price span::after {
     content: 'monthly';
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     right: -100%; 
+    font-size: 14px;
+    font-style: italic;
+    color: #868686;
+}
+
+/* OURNEWS */
+.ourNews {
+    height: 980px;
+    background-color: #F7F8FA;
+    padding-top: 120px;
+}
+
+.ourNews p {
+    line-height: 32px;
+}
+
+.ourNewsBoxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourNewsBoxes .ourNewsBox img {
+    width: 350px;
+}
+
+.ourNewsBoxes .ourNewsBox h4 {
+    color: #FFA837;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.ourNewsBoxes .ourNewsBox p:nth-child(3) {
     font-size: 12px;
 }
