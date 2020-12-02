@@ -28,15 +28,22 @@ const app = new Vue ({
                 'CREO TECH',
                 'ARCHITECT',
             ],
+            logos: [
+                '1',
+                '2',
+                '3',
+                '4',
+            ],
         },
         clientActive: 0,
         circleBackground1: 'selected',
         circleBackground2: '',
     },
     created() {
-        // INTERVAL FOR SWITCH TESTIMONIALS
+        // INTERVAL FOR SWITCH TESTIMONIALS AND LOGOS
         setInterval ( () => {
             this.changeTestimonial();
+            this.logoCarousel();
         }, 3000);
     },
     methods: {
@@ -62,6 +69,28 @@ const app = new Vue ({
             this.clientActive = 1;
             this.circleBackground1 = '';
             this.circleBackground2 = 'selected';
+        },
+        // FUNCTION FOR SWITCH LOGOS
+        logoCarousel() {
+            if ( this.clients.logos.includes('1') ) {
+                this.clients.logos.push('6');
+                this.clients.logos.shift();
+            } else if ( this.clients.logos.includes('2') ) {
+                this.clients.logos.push('5');
+                this.clients.logos.shift();
+            } else if ( this.clients.logos.includes('3') ) {
+                this.clients.logos.push('4');
+                this.clients.logos.shift();
+            } else if ( this.clients.logos.includes('4') ) {
+                this.clients.logos.push('3');
+                this.clients.logos.shift();
+            } else if ( this.clients.logos.includes('5') ) {
+                this.clients.logos.push('2');
+                this.clients.logos.shift();
+            } else if ( this.clients.logos.includes('6') ) {
+                this.clients.logos.push('1');
+                this.clients.logos.shift();
+            };
         },
     },
 });
