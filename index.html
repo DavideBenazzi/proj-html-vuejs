@@ -414,21 +414,9 @@
                 </div>
                 <!-- LOGO CLIENTS -->
                 <div class="clients mt50">
-                    <div class="logoClient mt30" v-for="logo in clients.logos">
+                    <div class="logoClient mt30" v-for="(logo , indexLogo) in clients.logos" :class="indexLogo > 3 ? 'hide' : ''">
                         <img :src="'./img/clients_partner_' + logo + '-200x202.png'" alt="avada logo">
                     </div>
-                    <!-- <div class="logoClient mt30">
-                        <img src="./img/clients_partner_5-200x202.png" alt="avada logo">
-                    </div>
-                    <div class="logoClient mt30">
-                        <img src="./img/clients_partner_6-200x202.png" alt="avada logo">
-                    </div>
-                    <div class="logoClient mt30">
-                        <img src="./img/clients_partner_1-200x202.png" alt="avada logo">
-                    </div>
-                    <div class="logoClient mt30">
-                        <img src="./img/clients_partner_2-200x202.png" alt="avada logo">
-                    </div> -->
                 </div>
             </div>
         </section>

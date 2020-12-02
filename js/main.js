@@ -33,6 +33,8 @@ const app = new Vue ({
                 '2',
                 '3',
                 '4',
+                '5',
+                '6',
             ],
         },
         clientActive: 0,
@@ -72,25 +74,7 @@ const app = new Vue ({
         },
         // FUNCTION FOR SWITCH LOGOS
         logoCarousel() {
-            if ( this.clients.logos.includes('1') ) {
-                this.clients.logos.push('6');
-                this.clients.logos.shift();
-            } else if ( this.clients.logos.includes('2') ) {
-                this.clients.logos.push('5');
-                this.clients.logos.shift();
-            } else if ( this.clients.logos.includes('3') ) {
-                this.clients.logos.push('4');
-                this.clients.logos.shift();
-            } else if ( this.clients.logos.includes('4') ) {
-                this.clients.logos.push('3');
-                this.clients.logos.shift();
-            } else if ( this.clients.logos.includes('5') ) {
-                this.clients.logos.push('2');
-                this.clients.logos.shift();
-            } else if ( this.clients.logos.includes('6') ) {
-                this.clients.logos.push('1');
-                this.clients.logos.shift();
-            };
+            return this.clients.logos.push( this.clients.logos.shift() );
         },
     },
 });
