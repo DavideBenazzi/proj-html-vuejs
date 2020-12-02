@@ -400,16 +400,18 @@
                 </h2>
                 <!-- SELECT IMAGE -->
                 <div class="selectImg mt30">
-                    <img src="./img/testimonials-2.jpg" alt="male testimonial">
+                    <img :src="clients.img[clientActive]" alt="testimonial">
                 </div>
-                <p class="mt30">
-                    <em>Ability proceeds from a fusion of skills, knowledge, understanding and imagination,<br>consolidated by experience.</em>
+                <p>
+                    <em>{{clients.say[clientActive]}}</em>
                 </p>
                 <p class="mt50">
-                    <strong>Luis Desalvo</strong>, CREO TECH
+                    <strong>{{clients.name[clientActive]}}</strong>, {{clients.profession[clientActive]}}
                 </p>
-                <i class="far fa-circle mt30"></i>
-                <i class="far fa-circle mt30"></i>
+                <div class="clientNav">
+                    <i class="far fa-circle mt30" @click='selectTestimonial1()' :class="circleBackground1"></i>
+                    <i class="far fa-circle mt30" @click='selectTestimonial2()' :class="circleBackground2"></i>
+                </div>
                 <!-- LOGO CLIENTS -->
                 <div class="clients mt50">
                     <div class="logoClient mt30">
