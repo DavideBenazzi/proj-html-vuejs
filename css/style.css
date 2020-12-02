@@ -500,6 +500,11 @@ a {
     color: #868686;
 }
 
+/* OURPLANS HOVER */
+.ourPlans .plans .plansBox:hover {
+    cursor: pointer;
+}
+
 /* OURNEWS */
 .ourNews {
     height: 980px;
@@ -516,6 +521,12 @@ a {
     justify-content: space-between;
 }
 
+.ourNewsBoxes .ourNewsBox .newsImg {
+    width: 350px;
+    height: 220px;
+    overflow: hidden;
+}
+
 .ourNewsBoxes .ourNewsBox img {
     width: 350px;
 }
@@ -529,6 +540,17 @@ a {
 
 .ourNewsBoxes .ourNewsBox p:nth-child(3) {
     font-size: 12px;
+}
+
+/* OURNEWS HOVER */
+.ourNewsBoxes .ourNewsBox:hover img {
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.ourNewsBoxes .ourNewsBox h4:hover {
+    cursor: pointer;
 }
 
 /* WHAT CLIENTS SAY */
@@ -612,6 +634,10 @@ footer .footerLinks a {
     font-weight: 600;
 }
 
+footer .footerLinks li:first-child a {
+    color: #FFA837;
+}
+
 /* FOOTER COPYRIGHT */
 footer .copyright {
     display: flex;
@@ -637,6 +663,7 @@ footer .copyright li:last-child {
 
 footer .copyright li b {
     color: #000;
+    margin-left: 5px;
 }
 
 /* FOOTER SOCIAL */
@@ -651,6 +678,23 @@ footer .social li a {
     color: #595A5F;
     font-size: 20px;
 }
+
+/* FOOTER HOVER */
+footer .footerLinks li a:hover {
+    color: #FFA837;
+    transition: 0.4s;
+}
+
+footer .copyright li a:hover b {
+    color: #FFA837;
+    transition: 0.4s;
+}
+
+footer .social a:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
 /* TO THE TOP */
 footer .toTheTop {
     position: fixed;
@@ -669,4 +713,10 @@ footer .toTheTop {
 footer .toTheTop i {
     font-size: 30px;
     color: #fff;
+}
+
+/* FOOTER TOTHETOP HOVER */
+footer .toTheTop:hover {
+    background-color: #FFA837;
+    transition: 0.4s;
 }
