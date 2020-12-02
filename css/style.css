@@ -27,6 +27,12 @@ a {
     text-decoration: none;
 }
 
+body #app .hideFooter {
+    position: relative;
+    margin-bottom: 320px;
+    z-index: 2;
+}
+
 /* UTILITY */
 .container {
     max-width: 1170px;
@@ -635,9 +641,11 @@ a {
 
 /* FOOTER */
 footer {
+    width: 100%;
     height: 320px;
     background-color: #F7F8FA;
-    position: relative;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer .container img {
@@ -719,7 +727,7 @@ footer .social a:hover {
 }
 
 /* TO THE TOP */
-footer .toTheTop {
+.toTheTop {
     position: fixed;
     bottom: 0;
     right: 5%;
@@ -731,15 +739,16 @@ footer .toTheTop {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
-footer .toTheTop i {
+.toTheTop i {
     font-size: 30px;
     color: #fff;
 }
 
-/* FOOTER TOTHETOP HOVER */
-footer .toTheTop:hover {
+/* TOTHETOP HOVER */
+.toTheTop:hover {
     background-color: #FFA837;
     transition: 0.4s;
 }
