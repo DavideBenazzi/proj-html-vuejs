@@ -224,21 +224,58 @@ body #app .hideFooter .hide {
     flex-direction: column;
 }
 
+@keyframes h1-sem0-SlideFade {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero .container .sem h1 {
     font-size: 50px;
     margin-top: 150px;
+    animation:  1s ease-out 0s 1 h1-sem0-SlideFade;
+}
+
+@keyframes p-sem0-SlideFade {
+    0% {
+        transform: translateX(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero .container .sem p {
     font-size: 16px;
+    animation:  1s ease-out 0s 1 p-sem0-SlideFade;
+}
+
+@keyframes btn-sem0-SlideFade {
+    0% {
+        transform: translateY(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero .container .sem .semBtn {
     display: flex;
+    animation:  1s ease-out 0s 1 btn-sem0-SlideFade;
 }
 
 .hero .container .sem .semBtn .btnOrange {
     margin-right: 20px;
+    animation:  1s ease-out 0s 1 btn-sem0-SlideFade;
 }
 /* HERO 1*/
 .hero1 {
@@ -333,26 +370,75 @@ body #app .hideFooter .hide {
     flex-direction: column;
 }
 
+@keyframes h1-sem1-SlideFade {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero1 .container .sem h1 {
     font-size: 50px;
     margin-top: 150px;
+    animation:  1s ease-out 0s 1 h1-sem1-SlideFade;
+}
+
+@keyframes p-sem1-SlideFade {
+    0% {
+        transform: translateX(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero1 .container .sem p {
     font-size: 16px;
+    animation:  1s ease-out 0s 1 p-sem1-SlideFade;
+}
+
+@keyframes btn-sem1-SlideFade {
+    0% {
+        transform: translateY(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero1 .container .sem .semBtn {
     display: flex;
+    animation:  1s ease-out 0s 1 btn-sem1-SlideFade;
 }
 
 .hero1 .container .sem .semBtn .btnOrange {
     margin-right: 20px;
+    animation:  1s ease-out 0s 1 btn-sem1-SlideFade;
+}
+
+@keyframes img-sem1-SlideFade {
+    0% {
+        transform: translateX(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero1 .container .sem1Slide .sem1Img {
     padding-top: 100px;
     padding-left: 100px;
+    animation:  1s ease-out 0s 1 img-sem1-SlideFade;
 }
 /* HERO 2*/
 .hero2 {
@@ -446,27 +532,77 @@ body #app .hideFooter .hide {
     flex-direction: column;
 }
 
+@keyframes h1-sem2-SlideFade {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero2 .container .sem h1 {
     font-size: 50px;
     margin-top: 150px;
+    animation:  1s ease-out 0s 1 h1-sem2-SlideFade;
+}
+
+@keyframes p-sem2-SlideFade {
+    0% {
+        transform: translateX(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero2 .container .sem p {
     font-size: 16px;
+    animation:  1s ease-out 0s 1 p-sem1-SlideFade;
+}
+
+@keyframes btn-sem2-SlideFade {
+    0% {
+        transform: translateY(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .hero2 .container .sem .semBtn {
     display: flex;
+    animation:  1s ease-out 0s 1 btn-sem2-SlideFade;
 }
 
 .hero2 .container .sem .semBtn .btnOrange {
     margin-right: 20px;
+    animation:  1s ease-out 0s 1 btn-sem2-SlideFade;
+}
+
+@keyframes img-sem2-SlideFade {
+    0% {
+        transform: translateX(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        transform: scale(0.8);
+    }
 }
 
 .hero2 .container .sem2Slide .sem2Img {
     padding-top: 60px;
     padding-left: 120px;
     transform: scale(0.8);
+    animation:  1s ease-out 0s 1 img-sem2-SlideFade;
 }
 
 /* MEET */
