@@ -287,7 +287,7 @@ body #app .hideFooter .hide {
     position: relative;
 }
 
-.hero1::after {
+.hero1::before {
     content: '';
     background-image: url('../img/pattern_background.png');
     position: absolute;
@@ -449,7 +449,7 @@ body #app .hideFooter .hide {
     padding: 25px;
 }
 
-.hero2::after {
+.hero2::before {
     content: '';
     background-image: url('../img/pattern_background.png');
     position: absolute;
@@ -1144,11 +1144,128 @@ footer .social a:hover {
     transition: 0.4s;
 }
 
+/* CALL TO ACTION */
+.callToAction1 {
+    position: fixed;
+    right: 5%;
+    top: 200px;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    background-color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 3;
+    overflow: hidden;
+    text-align: center;
+}
+
+.callToAction1 .demos {
+    display: flex;
+}
+
+.callToAction1 .demos i {
+    font-size: 40px;
+    padding: 5px;
+    padding: 10px 15px 0;
+    color: #868686;
+}
+
+.callToAction1 p {
+    color: #868686;
+    font-weight: 900;
+}
+
+@keyframes switchCTA1 {
+    0%   {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-70px);
+    }    
+}
+
+.callToAction1:hover {
+    cursor: pointer;    
+}
+
+.callToAction1:hover .demos i {
+    animation: 0.2s ease-out 0s 1 switchCTA1;
+    animation-fill-mode: forwards;
+}
+
+.callToAction2 {
+    position: fixed;
+    right: 5%;
+    top: 280px;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    background-color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 3;
+    overflow: hidden;
+    text-align: center;
+}
+
+.callToAction2 .shop {
+    display: flex;
+}
+
+
+.callToAction2 .shop .dollar p {
+    color: aquamarine;
+    font-size: 30px;
+    position: relative;
+    padding: 10px 20px 0;
+}
+
+.callToAction2 .shop .dollar i {
+    color: aquamarine;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.callToAction2 .shop i {
+    font-size: 40px;
+    padding: 5px;
+    padding: 10px 15px 0;
+    color: #868686;
+} 
+
+.callToAction2 p {
+    color: #868686;
+    font-weight: 900;
+}
+
+@keyframes switchCTA2 {
+    0%   {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80px);
+    }    
+}
+
+.callToAction2:hover {
+    cursor: pointer;    
+}
+
+.callToAction2:hover .shop {
+    animation: 0.2s ease-out 0s 1 switchCTA2;
+    animation-fill-mode: forwards;
+}
+
 /* TO THE TOP */
 .toTheTop {
     position: fixed;
     bottom: 0;
-    right: 5%;
+    right: 10%;
     height: 50px;
     width: 50px;
     border-top-left-radius: 4px;
