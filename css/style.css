@@ -32,6 +32,10 @@ body #app .hideFooter {
     margin-bottom: 320px;
     z-index: 2;
 }
+/* HIDE HEROES */
+body #app .hideFooter .hide {
+    display: none;
+}
 
 /* UTILITY */
 .container {
@@ -95,7 +99,7 @@ body #app .hideFooter {
     transition: 0.4s;
 }
 
-/* HERO */
+/* HERO 0*/
 .hero {
     background-image: url('../img/1-hero-image.png');
     height: 814px;
@@ -163,7 +167,7 @@ body #app .hideFooter {
     transition: 0.4s;
 }
 
-/* SEM */
+/* SEM 0*/
 .hero .container .sem {
     max-width: 50%;
     display: flex;
@@ -185,6 +189,233 @@ body #app .hideFooter {
 
 .hero .container .sem .semBtn .btnOrange {
     margin-right: 20px;
+}
+/* HERO 1*/
+.hero1 {
+    background-image: linear-gradient(to right, #5538e8, #35bbe6);
+    height: 814px;
+    background-size: cover;
+    color: #fff;
+    padding: 25px;
+    position: relative;
+}
+
+.hero1::before {
+    content: '';
+    background-image: url('../img/pattern_background.png');
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 1170px;
+    height: 814px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HEADER */
+.hero1 .container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+} 
+
+.hero1 .container header .navbar .navlinks {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.hero1 .container header .navbar .navlinks li a {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero1 .container header .navbar .navlinks li:first-child a {
+    color: #FFA834;
+}
+
+.hero1 .container header .navbar .navlinks li:nth-child(5) a::after {
+    content: 'APPLY';
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFA834;
+    border: 1px solid #FFA834;
+    border-radius: 4px;
+    padding: 3px 5px;
+    margin-left: 5px;
+} 
+
+.hero1 .container header .navbar .navlinks li:last-child a {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    background-color: #FFA837;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* NAVBAR LINKS HOVER */
+.hero1 .container header .navbar .navlinks li a:hover {
+    color: #FFA834;
+    transition: 0.4s;
+}
+
+.hero1 .container header .navbar .navlinks li:last-child a:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+/* SEM 1*/
+.hero1 .container .sem1Slide {
+    display: flex;
+}
+
+.hero1 .container .sem {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero1 .container .sem h1 {
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.hero1 .container .sem p {
+    font-size: 16px;
+}
+
+.hero1 .container .sem .semBtn {
+    display: flex;
+}
+
+.hero1 .container .sem .semBtn .btnOrange {
+    margin-right: 20px;
+}
+
+.hero1 .container .sem1Slide .sem1Img {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+/* HERO 2*/
+.hero2 {
+    background-image: linear-gradient(to right, #140369, #945aeb);
+    height: 814px;
+    background-size: cover;
+    color: #fff;
+    padding: 25px;
+}
+
+.hero2::before {
+    content: '';
+    background-image: url('../img/pattern_background.png');
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 1170px;
+    height: 814px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HEADER */
+.hero2 .container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+} 
+
+.hero2 .container header .navbar .navlinks {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.hero2 .container header .navbar .navlinks li a {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero2 .container header .navbar .navlinks li:first-child a {
+    color: #FFA834;
+}
+
+.hero2 .container header .navbar .navlinks li:nth-child(5) a::after {
+    content: 'APPLY';
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFA834;
+    border: 1px solid #FFA834;
+    border-radius: 4px;
+    padding: 3px 5px;
+    margin-left: 5px;
+} 
+
+.hero2 .container header .navbar .navlinks li:last-child a {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    background-color: #FFA837;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* NAVBAR LINKS HOVER */
+.hero2 .container header .navbar .navlinks li a:hover {
+    color: #FFA834;
+    transition: 0.4s;
+}
+
+.hero2 .container header .navbar .navlinks li:last-child a:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+/* SEM 2*/
+.hero2 .container .sem2Slide {
+    display: flex;
+}
+
+.hero2 .container .sem {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero2 .container .sem h1 {
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.hero2 .container .sem p {
+    font-size: 16px;
+}
+
+.hero2 .container .sem .semBtn {
+    display: flex;
+}
+
+.hero2 .container .sem .semBtn .btnOrange {
+    margin-right: 20px;
+}
+
+.hero2 .container .sem2Slide .sem2Img {
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 /* MEET */

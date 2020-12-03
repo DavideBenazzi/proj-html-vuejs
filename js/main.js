@@ -11,6 +11,11 @@ const app = new Vue ({
             'News',
             'Get In Touch Now'
         ],
+        heroes: [
+            '0',
+            '1',
+            '2',
+        ],
         clients: {
             img: [
                 './img/testimonials-2.jpg',
@@ -46,6 +51,7 @@ const app = new Vue ({
         setInterval ( () => {
             this.changeTestimonial();
             this.logoCarousel();
+            this.heroCarousel();
         }, 3000);
     },
     methods: {
@@ -76,5 +82,9 @@ const app = new Vue ({
         logoCarousel() {
             return this.clients.logos.push( this.clients.logos.shift() );
         },
+        // FUNCTION FOR SWITCH HERO
+        heroCarousel() {
+            return this.heroes.push( this.heroes.shift() );
+        }
     },
 });

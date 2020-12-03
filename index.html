@@ -17,8 +17,8 @@
     <!-- VUE -->
     <div id='app'>
         <div class="hideFooter">
-            <!-- HERO -->
-            <section class="hero">
+            <!-- HERO 0 -->
+            <section :class="heroes[0] === '0' ? 'hero' : 'hide'">
                 <!-- CONTAINER -->
                 <div class="container">
                     <!-- HEADER -->
@@ -56,6 +56,100 @@
                                 </button>
                             </a>
                         </div>
+                    </div>                    
+                </div>
+            </section>
+            <!-- HERO 1 -->
+            <section :class="heroes[0] === '1' ? 'hero1' : 'hide'">
+                <!-- CONTAINER -->
+                <div class="container">
+                    <!-- HEADER -->
+                    <header>
+                        <a href="https://avada.theme-fusion.com/seo/" target="blank">
+                            <img src="./img/logo_seo_w_1x.png" alt="logo seo" class="logo">
+                        </a>
+                        <!-- NAVBAR -->
+                        <nav class="navbar">
+                            <ul class="navlinks">
+                                <li v-for='link in links'>
+                                    <a href="#">{{ link }}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <!-- SEM -->
+                    <div class="sem1Slide">
+                        <div class="sem">
+                            <h1>
+                                Rank Your Local<br>Business With SEO
+                            </h1>
+                            <p class="mt30">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Phasellum eu ornare erat. Curabitur pulvinar elit.
+                            </p>
+                            <!-- SEM BUTTONS -->
+                            <div class="semBtn mt30">
+                                <a href="#">
+                                    <button class="btn btnOrange">
+                                        BUY AVADA NOW
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="btn btnBlue">
+                                        CONTACT US
+                                    </button>
+                                </a>
+                            </div>
+                        </div>    
+                        <div class="sem1Img">
+                            <img src="./img/best-seo-services-slide-3.png" alt="seo services">
+                        </div>                
+                    </div>
+                </div>
+            </section>
+            <!-- HERO 2 -->
+            <section :class="heroes[0] === '2' ? 'hero2' : 'hide'">
+                <!-- CONTAINER -->
+                <div class="container">
+                    <!-- HEADER -->
+                    <header>
+                        <a href="https://avada.theme-fusion.com/seo/" target="blank">
+                            <img src="./img/logo_seo_w_1x.png" alt="logo seo" class="logo">
+                        </a>
+                        <!-- NAVBAR -->
+                        <nav class="navbar">
+                            <ul class="navlinks">
+                                <li v-for='link in links'>
+                                    <a href="#">{{ link }}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <!-- SEM -->
+                    <div class="sem2Slide">
+                        <div class="sem">
+                            <h1>
+                                We Provide The<br>Best Seo Services
+                            </h1>
+                            <p class="mt30">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Phasellum eu ornare erat. Curabitur pulvinar elit.
+                            </p>
+                            <!-- SEM BUTTONS -->
+                            <div class="semBtn mt30">
+                                <a href="#">
+                                    <button class="btn btnOrange">
+                                        BUY AVADA NOW
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="btn btnBlue">
+                                        CONTACT US
+                                    </button>
+                                </a>
+                            </div>
+                        </div>  
+                        <div class="sem2Img">
+                            <img src="./img/best-seo-services-slide-1.png" alt="seo services">
+                        </div>                  
                     </div>
                 </div>
             </section>
