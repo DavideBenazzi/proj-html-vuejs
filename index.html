@@ -18,7 +18,7 @@
     <div id='app'>
         <div class="hideFooter">
             <!-- HERO 0 -->
-            <section :class="heroes[0] === '0' ? 'hero' : 'hide'">
+            <section :class="heroes[0] === '0' ? 'hero' : 'hide'" @mouseenter="stopLoop" @mouseleave="startLoop">
                 <!-- CONTAINER -->
                 <div class="container">
                     <!-- HEADER -->
@@ -58,9 +58,15 @@
                         </div>
                     </div>                    
                 </div>
+                <div class="prev" @click="prevHero">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="next" @click="nextHero">
+                    <i class="fas fa-angle-right"></i>
+                </div>
             </section>
             <!-- HERO 1 -->
-            <section :class="heroes[0] === '1' ? 'hero1' : 'hide'">
+            <section :class="heroes[0] === '1' ? 'hero1' : 'hide'" @mouseenter="stopLoop" @mouseleave="startLoop">
                 <!-- CONTAINER -->
                 <div class="container">
                     <!-- HEADER -->
@@ -105,9 +111,15 @@
                         </div>                
                     </div>
                 </div>
+                <div class="prev" @click="prevHero">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="next" @click="nextHero">
+                    <i class="fas fa-angle-right"></i>
+                </div>
             </section>
             <!-- HERO 2 -->
-            <section :class="heroes[0] === '2' ? 'hero2' : 'hide'">
+            <section :class="heroes[0] === '2' ? 'hero2' : 'hide'" @mouseenter="stopLoop" @mouseleave="startLoop">
                 <!-- CONTAINER -->
                 <div class="container">
                     <!-- HEADER -->
@@ -151,6 +163,12 @@
                             <img src="./img/best-seo-services-slide-1.png" alt="seo services">
                         </div>                  
                     </div>
+                </div>
+                <div class="prev" @click="prevHero">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="next" @click="nextHero">
+                    <i class="fas fa-angle-right"></i>
                 </div>
             </section>
             <!-- MEET -->

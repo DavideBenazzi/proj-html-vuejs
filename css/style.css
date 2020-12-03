@@ -98,6 +98,56 @@ body #app .hideFooter .hide {
     border-color: #5F7AFD;
     transition: 0.4s;
 }
+/* PREV NEXT */
+.hideFooter .prev {
+    position: absolute;
+    top: 407px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #464646;
+    font-size: 30px;
+}
+
+.hideFooter .prev i {
+    color: #fff;
+}
+
+.hideFooter .prev:hover {
+    background-color: #FFA837;
+    transition: 0.4s;
+}
+
+.hideFooter .next {
+    position: absolute;
+    top: 407px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #464646;
+    font-size: 30px;
+}
+
+.hideFooter .next i {
+    color: #fff;
+}
+
+.hideFooter .next:hover {
+    background-color: #FFA837;
+    transition: 0.4s;
+}
 
 /* HERO 0*/
 .hero {
@@ -200,7 +250,7 @@ body #app .hideFooter .hide {
     position: relative;
 }
 
-.hero1::before {
+.hero1::after {
     content: '';
     background-image: url('../img/pattern_background.png');
     position: absolute;
@@ -313,7 +363,7 @@ body #app .hideFooter .hide {
     padding: 25px;
 }
 
-.hero2::before {
+.hero2::after {
     content: '';
     background-image: url('../img/pattern_background.png');
     position: absolute;
@@ -414,8 +464,9 @@ body #app .hideFooter .hide {
 }
 
 .hero2 .container .sem2Slide .sem2Img {
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 60px;
+    padding-left: 120px;
+    transform: scale(0.8);
 }
 
 /* MEET */

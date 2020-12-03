@@ -45,14 +45,15 @@ const app = new Vue ({
         clientActive: 0,
         circleBackground1: 'selected',
         circleBackground2: '',
+        intervalId: 0,
     },
     created() {
         // INTERVAL FOR SWITCH TESTIMONIALS AND LOGOS
         setInterval ( () => {
             this.changeTestimonial();
             this.logoCarousel();
-            this.heroCarousel();
         }, 3000);
+        this.startLoop();
     },
     methods: {
         // FUNCTION FOR SWAP TESTIMONIALS
@@ -85,6 +86,21 @@ const app = new Vue ({
         // FUNCTION FOR SWITCH HERO
         heroCarousel() {
             return this.heroes.push( this.heroes.shift() );
-        }
+        },
+        nextHero() {
+            return this.heroes.push( this.heroes.shift() );
+        },
+        prevHero() {
+            return this.heroes.unshift( this.heroes.pop() );
+        },
+        // START STOP LOOP
+        startLoop() {
+            this.intervalId = setInterval(() => {
+            this.heroCarousel();
+            }, 3000);
+          },
+          stopLoop() {
+            clearInterval(this.intervalId);
+          },
     },
 });
