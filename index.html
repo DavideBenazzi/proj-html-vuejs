@@ -513,7 +513,7 @@
                     </h2>
                     <!-- SELECT IMAGE -->
                     <div class="selectImg mt30">
-                        <img :src="clients.img[clientActive]" alt="testimonial">
+                        <img :src="clients.img[clientActive]" alt="testimonial"  @mouseenter="stopLoopTestimonial" @mouseleave="startLoopTestimonial">
                     </div>
                     <p>
                         <em>{{clients.say[clientActive]}}</em>
@@ -521,14 +521,14 @@
                     <p class="mt50">
                         <strong>{{clients.name[clientActive]}}</strong>, {{clients.profession[clientActive]}}
                     </p>
-                    <div class="clientNav">
+                    <div class="clientNav" @mouseenter="stopLoopTestimonial" @mouseleave="startLoopTestimonial">
                         <i class="far fa-circle mt30" @click='selectTestimonial1()' :class="circleBackground1"></i>
                         <i class="far fa-circle mt30" @click='selectTestimonial2()' :class="circleBackground2"></i>
                     </div>
                     <!-- LOGO CLIENTS -->
                     <div class="clients mt50">
                         <div class="logoClient mt30" v-for="(logo , indexLogo) in clients.logos" :class="indexLogo > 3 ? 'hide' : ''">
-                            <img :src="'./img/clients_partner_' + logo + '-200x202.png'" alt="avada logo">
+                            <img :src="'./img/clients_partner_' + logo + '-200x202.png'" alt="avada logo" @mouseenter="stopLoopLogo" @mouseleave="startLoopLogo">
                         </div>
                     </div>
                 </div>

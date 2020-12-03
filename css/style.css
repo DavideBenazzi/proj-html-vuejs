@@ -1028,6 +1028,7 @@ body #app .hideFooter .hide {
 
 .whatClients .clients .logoClient img {
     width: 120px;
+    cursor: pointer;
 }
 
 .whatClients .clients .hide {

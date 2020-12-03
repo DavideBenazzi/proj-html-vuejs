@@ -46,14 +46,14 @@ const app = new Vue ({
         circleBackground1: 'selected',
         circleBackground2: '',
         intervalId: 0,
+        intervalLogo: 0,
+        intervalTestimonial: 0,
     },
     created() {
         // INTERVAL FOR SWITCH TESTIMONIALS AND LOGOS
-        setInterval ( () => {
-            this.changeTestimonial();
-            this.logoCarousel();
-        }, 3000);
+        this.startLoopLogo();
         this.startLoop();
+        this.startLoopTestimonial();
     },
     methods: {
         // FUNCTION FOR SWAP TESTIMONIALS
@@ -93,7 +93,7 @@ const app = new Vue ({
         prevHero() {
             return this.heroes.unshift( this.heroes.pop() );
         },
-        // START STOP LOOP
+        // START STOP LOOP HERO
         startLoop() {
             this.intervalId = setInterval(() => {
             this.heroCarousel();
@@ -101,6 +101,24 @@ const app = new Vue ({
           },
           stopLoop() {
             clearInterval(this.intervalId);
+          },
+        //   START STOP LOOP LOGO
+        startLoopLogo() {
+            this.intervalLogo = setInterval(() => {
+            this.logoCarousel();
+            }, 3000);
+          },
+          stopLoopLogo() {
+            clearInterval(this.intervalLogo);
+          },
+        //   START STOP LOOP TESTIMONIALS
+        startLoopTestimonial() {
+            this.intervalTestimonial = setInterval(() => {
+            this.changeTestimonial();
+            }, 3000);
+          },
+          stopLoopTestimonial() {
+            clearInterval(this.intervalTestimonial);
           },
     },
 });
