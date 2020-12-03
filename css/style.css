@@ -287,7 +287,7 @@ body #app .hideFooter .hide {
     position: relative;
 }
 
-.hero1::before {
+/* .hero1::before {
     content: '';
     background-image: url('../img/pattern_background.png');
     position: absolute;
@@ -298,7 +298,7 @@ body #app .hideFooter .hide {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* HEADER */
 .hero1 .container header {
@@ -449,7 +449,7 @@ body #app .hideFooter .hide {
     padding: 25px;
 }
 
-.hero2::before {
+/* .hero2::before {
     content: '';
     background-image: url('../img/pattern_background.png');
     position: absolute;
@@ -460,7 +460,7 @@ body #app .hideFooter .hide {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* HEADER */
 .hero2 .container header {
